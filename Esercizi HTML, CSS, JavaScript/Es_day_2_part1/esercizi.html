@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .bordered-column {
+      border: 1px solid #ccc;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 bordered-column">
+        <p>Esercizio 1</p>
+      </div>
+      <div class="col-md-6 bordered-column">
+        <button type="button" onclick="somma(1,2,3,4)">Soluzione Esercizio 1</button>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 2</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="differenza(1,2,3,5)">Soluzione Esercizio 2</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 3</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="moltiplicazione(1,2,3,4)">Soluzione Esercizio 3</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 4</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="divisione(1,2,3,4)">Soluzione Esercizio 4</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 5</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="resto(1,2,3,4)">Soluzione Esercizio 5</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 6</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="media_aritmetica([1,2,3],[4,5,6])">Soluzione Esercizio 6</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 7</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="pari_dispari(1, 2)">Soluzione Esercizio 7</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 8</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="maggiore_minore(1, 2, 4, 3)">Soluzione Esercizio 8</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 9</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="stringa_vuota('', 'albero')">Soluzione Esercizio 9</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 10</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="sottostringa('ponte', 'casa al mare')">Soluzione Esercizio 10</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 11</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="vocale_consonante('a', 'b')">Soluzione Esercizio 11</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 12</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="div3o5(3, 5, 15)">Soluzione Esercizio 12</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 13</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="stampa_array()">Soluzione Esercizio 13</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 14</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="cerca_elemento([1,2,3,4,5], [1,2,4,5,6])">Soluzione Esercizio 14</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 15</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="unione_array([1,2,3,4,5], [1,2,4,5,6], [2,5,7,2], [1,5,4,7])">Soluzione Esercizio 15</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 16</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="sotto_array([1,2,3,4,5], [1,2,4,5,6], [2,5,7,2], [1,5,4,7])">Soluzione Esercizio 16</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 17</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="filtro([1,2,3,4,5], [1,2,4,5,6], [2,5,7,2], [1,5,4,7])">Soluzione Esercizio 17</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 18</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="oggetto({nome:'John',eta:30}, {nome:'Sam',eta:24})">Soluzione Esercizio 18</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 19</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="oggetto_proprieta({nome:'John',eta:30}, {nome:'Sam',eta:24})">Soluzione Esercizio 19</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 20</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="modifica_proprieta({nome:'John',eta:30}, {nome:'Sam',eta:24})">Soluzione Esercizio 20</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 21</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="sottofunzione(1,2,3,4)">Soluzione Esercizio 21</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 22</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="sottofunzione2(1,2,3,4)">Soluzione Esercizio 22</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 23</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="sottofunzione3('casa', 'automobile')">Soluzione Esercizio 23</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 24</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="sottofunzione4('casa', 'c', 'automobile', 'z')">Soluzione Esercizio 24</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 25</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="sottofunzione5(1,2,3,4)">Soluzione Esercizio 25</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 26</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="sottofunzione6('casa', 'albero')">Soluzione Esercizio 26</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bordered-column">
+          <p>Esercizio 27</p>
+        </div>
+        <div class="col-md-6 bordered-column">
+          <button type="button" onclick="sottofunzione7([1,2,3,4,5], [1,2,4,5,6])">Soluzione Esercizio 27</button>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 bordered-column">
+        <p>Esercizio 28</p>
+      </div>
+      <div class="col-md-6 bordered-column">
+        <button type="button" onclick="sottofunzione8([1,2,54,4,5], [1,120,4,5,6])">Soluzione Esercizio 28</button>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 bordered-column">
+      <p>Esercizio 29</p>
+    </div>
+    <div class="col-md-6 bordered-column">
+      <button type="button" onclick="sottofunzione9(['casa', 'albero'], ['automobile', 'libro'])">Soluzione Esercizio 29</button>
+    </div>
+</div>
+  </div>
+
+  <!--bootstrap scripts-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!--javascript-->
+  <script src="script.js"></script>
+</body>
+</html>
